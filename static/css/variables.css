@@ -4,11 +4,14 @@
 
 	--sidebar-color-white: white;
 	--sidebar-new-color-primary: #7a7a7a;
-	--sidebar-new-color-primary-hover-or-active: #c32059;
-	--sidebar-new-title-primary-color: #6F1D5D;
+	--sidebar-new-color-primary-hover-or-active: #FFB224;
+	--sidebar-new-title-primary-color: #c32059;
 	--sidebar-new-background-color-primary: white;
 
 	--navbar-new-background-color-primary: #6F1D5D;
+	--navbar-color-white: white;
+	--navbar-new-color-primary: #7a7a7a;
+	--navbar-new-color-primary-hover-or-active: #FFB224;
 
 	/* END NEW VARIABLES */
 

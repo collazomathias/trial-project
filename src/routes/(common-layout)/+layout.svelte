@@ -74,7 +74,7 @@
 </script>
 
 <svelte:head>
-	<title>HexaDash - Dashoboard Template</title>
+	<title>HexaDash - Dashboard Template</title>
 </svelte:head>
 
 {#if isAuthenticated}

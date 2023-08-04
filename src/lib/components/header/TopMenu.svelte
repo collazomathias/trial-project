@@ -24,6 +24,9 @@
 				<a href={'#'} class="active">Dashboard</a>
 				<ul class="subMenu">
 					<li class="active">
+						<a href="/trial-project">Demo 1</a>
+					</li>
+					<li>
 						<a href="/home-one">Demo 1</a>
 					</li>
 					<li>

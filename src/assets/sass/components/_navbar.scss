@@ -209,6 +209,7 @@
 
     .nav-settings {
       .dropdown-custom {
+
         .dropdown-wrapper--large {
           @include cms2(900px) {
             min-width: 100%;
@@ -249,13 +250,12 @@
           display: flex;
           align-items: center;
           padding: 7px 20px;
-          color: var(--body-color);
+          color: var(--navbar-new-color-primary);
           transition: 0.3s ease;
           font-size: 14px;
 
           &:hover {
-            color: orange;
-            background: rgba(var(--color-primary-rgba), 0.1);
+            color: var(--navbar-new-color-primary-hover-or-active);
           }
 
           img {
@@ -283,13 +283,25 @@
 
     .nav-item-toggle {
       position: relative;
-      color: var(--color-gray);
       display: flex;
       align-items: center;
 
       span,
       svg {
         width: 20px;
+        path {
+          fill: var(--navbar-color-white) !important;
+          color: var(--navbar-color-white) !important;
+        }
+      }
+
+      &:hover {
+        svg {
+          path {
+            fill: var(--navbar-new-color-primary-hover-or-active) !important;
+            color: var(--navbar-new-color-primary-hover-or-active) !important;
+          }
+        }
       }
 
       &.icon-active {
@@ -332,7 +344,8 @@
     }
 
     .dropdown-wrapper {
-      border-radius: 0 0 6px 6px;
+      border-radius: 0 0 16px 16px;
+      border-bottom: 10px solid var(--navbar-new-background-color-primary);
 
       @include e("title") {
         margin: 10px;
@@ -617,7 +630,7 @@
       }
       .nav-item__title {
         margin-left: 10px;
-        color: var(--color-gray);
+        color: var(--navbar-color-white);
         font-size: 14px;
         font-weight: 500;
         line-height: 20px;
@@ -705,7 +718,7 @@
               font-size: 14px;
               display: block;
               padding: 9px 25px 9px;
-              color: var(--color-gray);
+              color: var(--navbar-new-color-primary);
               transition: var(--transition);
 
               i,
@@ -724,9 +737,8 @@
               }
 
               &:hover {
-                background: rgba(var(--color-primary-rgba), 0.05);
                 padding-left: 35px;
-                color: var(--color-primary);
+                color: var(--navbar-new-color-primary-hover-or-active);
               }
             }
           }
@@ -748,9 +760,16 @@
         }
       }
 
+      &:hover {
+        i {
+          fill: var(--navbar-new-color-primary-hover-or-active) !important;
+          color: var(--navbar-new-color-primary-hover-or-active) !important;
+        }
+      }
+
       i {
         font-size: 20px;
-        color: var(--color-lighten);
+        color: var(--navbar-color-white);
       }
       img,
       svg {
@@ -866,10 +885,22 @@
     visibility: hidden;
     opacity: 0;
 
+    .nav-item-toggle {
+
+      span,
+      svg {
+        path {
+          fill: var(--navbar-new-color-primary) !important;
+          color: var(--navbar-new-color-primary) !important;
+        }
+      }
+    }
+
     &.show {
       transform: translateY(0px);
       visibility: visible;
       opacity: 1;
+      border-bottom: 1px solid var(--navbar-new-background-color-primary);
 
       .search-form {
         display: flex;
@@ -1002,7 +1033,7 @@
               font-family: "Line Awesome Free";
               content: "\f107";
               line-height: 1;
-              color: var(--color-light);
+              color: var(--navbar-color-white);
             }
           }
         }
@@ -1031,6 +1062,9 @@
             top: 65px;
             opacity: 1;
             visibility: visible;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom: 10px solid var(--navbar-new-background-color-primary);
           }
         }
 
@@ -1040,7 +1074,7 @@
           align-items: center;
           font-weight: 500;
           padding: 1.657rem 0;
-          color: var(--color-gray);
+          color: var(--navbar-color-white);
           position: relative;
 
           svg,
@@ -1083,7 +1117,7 @@
               font-weight: 400;
               padding: 0 30px;
               line-height: 3;
-              color: var(--color-light);
+              color: var(--navbar-new-color-primary) !important;
               transition: 0.3s;
 
               &:hover,
@@ -1167,10 +1201,10 @@
         a {
           &.active {
             &:before {
-              color: var(--color-primary) !important;
+              color: var(--navbar-new-color-primary-hover-or-active) !important;
             }
 
-            color:var(--color-primary);
+            color:var(--navbar-new-color-primary-hover-or-active);
           }
         }
 
@@ -1189,6 +1223,9 @@
           visibility: hidden;
           transition: 0.4s;
           background-color: var(--color-white);
+          border-bottom-left-radius: 16px;
+          border-bottom-right-radius: 16px;
+          border-bottom: 10px solid var(--navbar-new-background-color-primary);
 
           &.megaMenu-small {
             width: 500px;

@@ -188,6 +188,9 @@
 					</a>
 					<ul>
 						<li class="menu-item active">
+							<a href="/trial-project">Trial project</a>
+						</li>
+						<li class="menu-item">
 							<a href="/home-one">Demo 1</a>
 						</li>
 						<li class="menu-item">
@@ -200,22 +203,22 @@
 							<a href="/home-four">Demo 4</a>
 						</li>
 						<li class="menu-item">
-							<a href="/home-five"> Demo 5</a>
+							<a href="/home-five">Demo 5</a>
 						</li>
 						<li class="menu-item">
-							<a href="/home-six"> Demo 6</a>
+							<a href="/home-six">Demo 6</a>
 						</li>
 						<li class="menu-item">
-							<a href="/home-seven"> Demo 7</a>
+							<a href="/home-seven">Demo 7</a>
 						</li>
 						<li class="menu-item">
-							<a href="/home-eight"> Demo 8</a>
+							<a href="/home-eight">Demo 8</a>
 						</li>
 						<li class="menu-item">
-							<a href="/home-nine"> Demo 9</a>
+							<a href="/home-nine">Demo 9</a>
 						</li>
 						<li class="menu-item">
-							<a href="/home-ten"> Demo 10</a>
+							<a href="/home-ten">Demo 10</a>
 						</li>
 					</ul>
 				</li>
