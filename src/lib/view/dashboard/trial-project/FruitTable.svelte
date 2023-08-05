@@ -13,7 +13,6 @@
     }
 
     const deleteFruit = async(id) => {
-        console.log(id);
         await fetch("http://localhost:8080/fruit/" + id, {
             method: 'DELETE'
         })

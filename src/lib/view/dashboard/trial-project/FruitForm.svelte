@@ -88,23 +88,23 @@
         {/if}
     </CardHeader>
     <CardBody>
-        <form>
+        <form on:submit={(id === null) ? addFruit : editFruit}>
             <input type="text" id="fruitId" name="fruitId" bind:value={id} hidden>
             <label for="fruitName">Fruit name</label>
-            <input type="text" id="fruitName" name="fruitName" placeholder="Enter a fruit name..." bind:value={name} />
+            <input type="text" id="fruitName" name="fruitName" placeholder="Enter a fruit name..." bind:value={name} minlength="3" maxlength="30" required>
             <label for="fruitCalories">Fruit calories</label>
-            <input type="text" id="fruitCalories" name="fruitCalories" placeholder="Enter the calories..." bind:value={calories}>
+            <input type="number" step="any" id="fruitCalories" name="fruitCalories" placeholder="Enter the calories..." bind:value={calories} min="0" required>
             <label for="fruitVitaminC">Fruit vitamin C</label>
-            <input type="text" id="fruitVitaminC" name="fruitVitaminC" placeholder="Enter the vitamin C..." bind:value={vitaminC}>
+            <input type="number" step="any" id="fruitVitaminC" name="fruitVitaminC" placeholder="Enter the vitamin C..." bind:value={vitaminC} min="0" required>
             <label for="fruitPotassium">Fruit potassium</label>
-            <input type="text" id="fruitPotassium" name="fruitPotassium" placeholder="Enter the potassium..." bind:value={potassium}>
+            <input type="number" step="any" id="fruitPotassium" name="fruitPotassium" placeholder="Enter the potassium..." bind:value={potassium} min="0" required>
             <div>
                 {#if id === null}
-                    <button type="submit" on:click={addFruit}><Icon icon="gala:add" style="font-size: 23px;" />Add fruit</button>
+                    <button type="submit"><Icon icon="gala:add" style="font-size: 23px;" />Add fruit</button>
                 {:else}
-                    <button type="submit" on:click={editFruit}><Icon icon="uil:edit" style="font-size: 23px;" />Edit fruit</button>
+                    <button type="submit"><Icon icon="uil:edit" style="font-size: 23px;" />Edit fruit</button>
                 {/if}
-                <button class="clear-form" on:click={clearForm}><Icon icon="carbon:clean" style="font-size: 23px;" /></button>
+                <button type="reset" class="clear-form"><Icon icon="carbon:clean" style="font-size: 23px;" /></button>
             </div>
         </form>
     </CardBody>
