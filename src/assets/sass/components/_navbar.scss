@@ -345,7 +345,7 @@
 
     .dropdown-wrapper {
       border-radius: 0 0 16px 16px;
-      border-bottom: 10px solid var(--navbar-new-background-color-primary);
+      border-bottom: 5px solid var(--navbar-new-background-color-primary);
 
       @include e("title") {
         margin: 10px;
@@ -1064,7 +1064,7 @@
             visibility: visible;
             border-bottom-left-radius: 16px;
             border-bottom-right-radius: 16px;
-            border-bottom: 10px solid var(--navbar-new-background-color-primary);
+            border-bottom: 5px solid var(--navbar-new-background-color-primary);
           }
         }
 
@@ -1225,7 +1225,7 @@
           background-color: var(--color-white);
           border-bottom-left-radius: 16px;
           border-bottom-right-radius: 16px;
-          border-bottom: 10px solid var(--navbar-new-background-color-primary);
+          border-bottom: 5px solid var(--navbar-new-background-color-primary);
 
           &.megaMenu-small {
             width: 500px;

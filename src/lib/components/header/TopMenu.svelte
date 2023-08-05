@@ -24,7 +24,7 @@
 				<a href={'#'} class="active">Dashboard</a>
 				<ul class="subMenu">
 					<li class="active">
-						<a href="/trial-project">Demo 1</a>
+						<a href="/trial-project">Trial project</a>
 					</li>
 					<li>
 						<a href="/home-one">Demo 1</a>
@@ -40,6 +40,21 @@
 					</li>
 					<li>
 						<a href="/home-five"> Demo 5</a>
+					</li>
+					<li>
+						<a href="/home-six"> Demo 6</a>
+					</li>
+					<li>
+						<a href="/home-seven"> Demo 7</a>
+					</li>
+					<li>
+						<a href="/home-eight"> Demo 8</a>
+					</li>
+					<li>
+						<a href="/home-nine"> Demo 9</a>
+					</li>
+					<li>
+						<a href="/home-ten"> Demo 10</a>
 					</li>
 				</ul>
 			</li>

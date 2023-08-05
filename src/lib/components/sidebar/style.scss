@@ -113,6 +113,9 @@
             overflow-y: auto;
             z-index: 999;
             padding-left:0;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-bottom: 5px solid var(--navbar-new-background-color-primary);
 
             @include xl {
               max-height: 300px;

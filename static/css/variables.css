@@ -13,6 +13,19 @@
 	--navbar-new-color-primary: #7a7a7a;
 	--navbar-new-color-primary-hover-or-active: #FFB224;
 
+	--table-primary-color: #FFB224;
+	--tr-secondary-color: #ededed;
+	--th-primary-color: white;
+
+	--button-primary-color: #FFB224;
+	--button-primary-color-hover: #fbc156;
+	--button-text-color: white;
+
+	--new-input-border-color: #7a7a7a;
+	--clear-button-color: #c32059;
+	--clear-button-color-hover: #dd316d;
+	--new-title-primary-color: #c32059;
+
 	/* END NEW VARIABLES */
 
 
