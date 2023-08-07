@@ -1,6 +1,7 @@
 @import "../../../assets/sass/mixins/mixins.scss";
 @import "../../../assets/sass/mixins/functions.scss";
 @import "../../../assets/sass/components/cards";
+@import "../../../../static/css/variables.css";
 
 .admin {
     background-image: url('/img/admin-bg-light.png');
@@ -107,6 +108,16 @@
         font-weight: 500;
         line-height: calc(20 / 14);
     }
+
+    a {
+        font-size: 13px;
+        line-height: calc(22 / 13);
+        font-weight: 400;
+        color: var(--clear-button-color);
+        &:hover {
+            color: var(--clear-button-color-hover);
+        }
+    }
 }
 
 .admin-element-right {
@@ -156,7 +167,6 @@
 
 .admin-condition {
     margin-bottom: 2px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -178,7 +188,6 @@
     }
 
     .custom-checkbox {
-
         input[type='checkbox']+label:before,
         input[type='checkbox']+label:after {
             margin-top: 0;
@@ -189,7 +198,10 @@
         font-size: 13px;
         line-height: calc(22 / 13);
         font-weight: 400;
-        color: var(--color-primary);
+        color: var(--clear-button-color);
+        &:hover {
+            color: var(--clear-button-color-hover);
+        }
     }
 
     .custom-checkbox {
@@ -198,7 +210,6 @@
             line-height: calc(22 / 13);
             font-weight: 400;
             position: relative;
-            top: -3px;
             color: var(--color-light);
             cursor: pointer;
         }
@@ -235,6 +246,7 @@
 
             &:hover {
                 opacity: 0.7;
+                background-color: var(--clear-button-color) !important;
             }
 
             svg {
@@ -252,27 +264,15 @@
             }
 
             &.facebook {
-                background-color: rgba(#3a589b, 0.1);
-
-                i {
-                    color: #3a589b;
-                }
+                background-color: #3a589b;
             }
 
             &.twitter {
-                background-color: rgba(#03a9f4, 0.1);
-
-                i {
-                    color: #03a9f4;
-                }
+                background-color: #03a9f4;
             }
 
             &.github {
-                background-color: rgba(#090e30, 0.1);
-
-                i {
-                    color: #090e30;
-                }
+                background-color: #090e30;
             }
         }
 
@@ -400,7 +400,12 @@
             }
 
             &:hover {
-                border-color: var(--color-primary);
+                border-color: var(--navbar-new-background-color-primary);
+            }
+
+            &:focus {
+                border-color: var(--navbar-new-background-color-primary);
+                box-shadow: none;
             }
         }
 
@@ -418,6 +423,27 @@
         }
     }
 }
+
+/* NEW */
+
+
+.new-btn-sign-in {
+    background-color: var(--navbar-new-background-color-primary) !important;
+    border: none !important;
+    outline: none !important;
+    &:hover, &:active, &:visited, &:focus {
+        background-color: var(--navbar-new-background-color-primary-hover) !important;
+    }
+}
+
+.sign-in-container {
+    border: 1px solid var(--navbar-new-background-color-primary);
+}
+
+
+
+/* END NEW */
+
 
 //Edit Social Profile
 .edit-profile__body {

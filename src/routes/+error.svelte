@@ -26,41 +26,22 @@
 </script>
 
 {#if isAuthenticated}
-<div class="mobile-search">
-	<form action="/" class="search-form">
-		<img class="svg" alt="" src={'/img/svg/search.svg'} />
-		<input
-			class="form-control me-sm-2 box-shadow-none"
-			type="search"
-			placeholder="Search..."
-			aria-label="Search"
-		/>
-	</form>
-</div>
-<div class="mobile-author-actions" />
-<header class="header-top">
-	<nav class="navbar navbar-light">
-		<div class="navbar-left">
-			<LogoArea />
-		</div>
-		<div class="navbar-right">
-			<ul class="navbar-right__menu">
-				<li class="nav-search"><NavSearch /></li>
-				<li class="nav-message"><NavMessage /></li>
-				<li class="nav-notification"><NavNotification /></li>
-				<li class="nav-settings"><NavSettings /></li>
-				<li class="nav-flag-select"><NavFlags /></li>
-				<li class="nav-author"><NavAuthor /></li>
-			</ul>
-
-			<div class="navbar-right__mobileAction d-md-none">
-				<a href={'#'} class="btn-search">
-					<img class="svg feather-search" alt="" src={'/img/svg/search.svg'} />
-					<img alt="" src={'/img/svg/x.svg'} class="svg feather-x" />
-					<a href={'#'} class="btn-author-action">
-						<img alt="" class="svg" src={'/img/svg/more-vertical.svg'} />
-					</a>
-				</a>
+	<div class="mobile-search">
+		<form action="/" class="search-form">
+			<img class="svg" alt="" src={'/img/svg/search.svg'} />
+			<input
+				class="form-control me-sm-2 box-shadow-none"
+				type="search"
+				placeholder="Search..."
+				aria-label="Search"
+			/>
+		</form>
+	</div>
+	<div class="mobile-author-actions" />
+	<header class="header-top">
+		<nav class="navbar navbar-light">
+			<div class="navbar-left">
+				<LogoArea />
 			</div>
 			<div class="navbar-right">
 				<ul class="navbar-right__menu">
@@ -75,11 +56,31 @@
 				<div class="navbar-right__mobileAction d-md-none">
 					<a href={'#'} class="btn-search">
 						<img class="svg feather-search" alt="" src={'/img/svg/search.svg'} />
-						<img class="svg feather-x" alt="" src={'/img/svg/x.svg'} />
+						<img alt="" src={'/img/svg/x.svg'} class="svg feather-x" />
 						<a href={'#'} class="btn-author-action">
-							<img class="svg" alt="" src={'/img/svg/more-vertical.svg'} />
+							<img alt="" class="svg" src={'/img/svg/more-vertical.svg'} />
 						</a>
 					</a>
+				</div>
+				<div class="navbar-right">
+					<ul class="navbar-right__menu">
+						<li class="nav-search"><NavSearch /></li>
+						<li class="nav-message"><NavMessage /></li>
+						<li class="nav-notification"><NavNotification /></li>
+						<li class="nav-settings"><NavSettings /></li>
+						<li class="nav-flag-select"><NavFlags /></li>
+						<li class="nav-author"><NavAuthor /></li>
+					</ul>
+
+					<div class="navbar-right__mobileAction d-md-none">
+						<a href={'#'} class="btn-search">
+							<img class="svg feather-search" alt="" src={'/img/svg/search.svg'} />
+							<img class="svg feather-x" alt="" src={'/img/svg/x.svg'} />
+							<a href={'#'} class="btn-author-action">
+								<img class="svg" alt="" src={'/img/svg/more-vertical.svg'} />
+							</a>
+						</a>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -97,7 +98,7 @@
 								<div class="error-page__title">404</div>
 								<h5 class="fw-500">Sorry! the page you are looking for doesn't exist.</h5>
 								<div class="content-center mt-30">
-									<a href="/home-one" class="btn btn-primary btn-default btn-squared px-30"
+									<a href="/trial-project" class="btn btn-primary btn-default btn-squared px-30"
 										>Return Home</a
 									>
 								</div>

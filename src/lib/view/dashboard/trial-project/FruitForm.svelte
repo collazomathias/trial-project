@@ -104,7 +104,7 @@
                 {:else}
                     <button type="submit"><Icon icon="uil:edit" style="font-size: 23px;" />Edit fruit</button>
                 {/if}
-                <button type="reset" class="clear-form"><Icon icon="carbon:clean" style="font-size: 23px;" /></button>
+                <button type="reset" on:click={() => clearForm()} class="clear-form"><Icon icon="carbon:clean" style="font-size: 23px;" /></button>
             </div>
         </form>
     </CardBody>

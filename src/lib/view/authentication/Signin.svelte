@@ -47,7 +47,7 @@
 						setItem('user', response.data.data);
 						setItem('loggedin', response.data.loggedin);
 						setItem('access_token', response.data.data.token);
-						goto(`/home-one`);
+						goto(`/trial-project`);
 					}
 					loader = false;
 				})
@@ -56,7 +56,7 @@
 					setItem('user', 'response.data.data');
 					setItem('loggedin', true);
 					setItem('access_token', 'response.data.data.token');
-					goto(`/home-one`);
+					goto(`/trial-project`);
 					loader = false;
 				});
 
@@ -75,7 +75,7 @@
 						<div class="edit-profile__logos">
 							<img src="/img/logo-dark.svg" class="svg" alt="" />
 						</div>
-						<Card class="border-0">
+						<Card class="sign-in-container">
 							<!-- {#if loader}
 								<Spinner type="primary" size="md" />
 							{/if} -->
@@ -143,7 +143,7 @@
 											<Button
 												type="submit"
 												color="primary"
-												class="btn btn-primary btn-default w-100 btn-squared text-capitalize lh-normal px-50 signIn-createBtn "
+												class="btn new-btn-sign-in btn-primary btn-default w-100 btn-squared text-capitalize lh-normal px-50 signIn-createBtn "
 											>
 												{loader ? 'Loading' : 'sign in'}
 											</Button>
